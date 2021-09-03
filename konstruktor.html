@@ -1,0 +1,33 @@
+<html>
+  <head>   
+   <script type="text/javascript">
+    function klient(nazwisko_k,imie_k,zawod_k)
+      {
+        this.nazwisko=nazwisko_k;
+        this.imie=imie_k;
+        this.zawod=zawod_k;
+      }
+      klient.prototype.wypisz = function()
+      {
+      alert(this.nazwisko +''+this.imie+''+this.zawod);    
+      };
+      var osoba1 = new klient("kowalski","jan","kierowca");
+      var osoba2 = new klient("nowacki","anna","sekretarka");
+      var osoba3 = new klient("karol","karol","gamer");
+      var osoba4 = new klient("gaffke","jakub","5head");
+      var osoba5 = new klient("kozłowski","kordian","imperator");
+      osoba1.wypisz();
+      osoba2.wypisz();
+      osoba3.wypisz();
+      osoba4.wypisz();
+      osoba5.wypisz();
+
+      document.write("dostęp do właściwosci"+"<br>")  
+
+   </script>
+  </head>
+  <body>
+
+
+  </body>
+</html>
