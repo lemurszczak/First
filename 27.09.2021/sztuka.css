@@ -1,0 +1,59 @@
+
+
+body{
+    position: absolute;
+    width: 1900px;
+    height: 950px;
+    
+    background: #000100;
+    border: 4px solid #EA1717;
+    box-sizing: border-box;
+}
+
+#tytuł
+{
+    position: absolute;
+    left: 37.6%;
+    right: 39.48%;
+    top: 2.41%;
+    bottom: 91.67%;
+    
+    font-family: Comic Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    
+    color: #13F0C8;
+}
+#blok1
+{
+    position: absolute;
+left: 3.21%;
+right: 62.42%;
+top: 13.89%;
+bottom: 22.21%;
+
+background: #BF5C24;
+border: 5px solid #F80303;
+box-sizing: border-box;
+}
+#blok2
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    
+    position: absolute;
+    width: 653px;
+    height: 607px;
+    left: calc(50% - 653px/2 + 528.5px);
+    top: calc(50% - 607px/2 - 39.5px);
+    
+    background: #BF5C24;
+    border: 5px solid #F80303;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
