@@ -1,0 +1,54 @@
+<html>
+<head>
+<script>
+
+function porownywarka(liczba1 ,liczba2)
+{
+if(liczba1>liczba2)
+{
+alert("liczba1 większa");
+}   
+else if(liczba1<liczba2)
+{
+alert("liczba2 większa");
+}    
+else
+{
+alert("liczby rowne");    
+}
+
+}
+
+
+function losowe(liczba3, liczba4)
+{
+  var i
+  for(i=0;i<=100;i+1)
+  {
+    var losuj = Math.floor((Math.random()* liczba4)+ liczba3);
+document.write(losuj);
+  }
+
+
+}
+
+</script>
+</head>
+<body> 
+<form onsubmit="porownywarka(this.liczba1.value,this.liczba2.value)">   
+    <input type="number" id="liczba1">
+    <input type="number" id="liczba2"> 
+    <input type="submit">
+
+</form>
+
+
+<form onsubmit="losowe(this.liczba3.value,this.liczba4.value)">   
+    <input type="number" id="liczba3">
+    <input type="number" id="liczba4"> 
+    <input type="submit">
+
+</form>
+</body>
+</html>
+

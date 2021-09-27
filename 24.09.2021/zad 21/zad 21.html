@@ -1,0 +1,26 @@
+<html>
+  <head>   
+
+  </head>
+  <body>
+    podaj a<input type="number" id="a">
+    podaj b<input type="number" id="b">
+    <input type="button" name="pitagoras" onclick="pitagoras()"> 
+    <div id="wynik"></div>
+
+
+    <script>
+        function pitagoras()
+        {
+         var d=parseFloat(a.value);
+         var x=parseFloat(b.value);
+     
+         var pitagoras=Math.pow(d,2)+Math.pow(x,2);
+         var pitagoras1=Math.sqrt(pitagoras);
+
+         wynik.innerHTML = pitagoras1
+         ;
+        } 
+       </script>
+  </body>
+</html>
