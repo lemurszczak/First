@@ -44,16 +44,24 @@ box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px;
+    padding: 1px;
     
     position: absolute;
     width: 653px;
-    height: 607px;
+    height: 603px;
     left: calc(50% - 653px/2 + 528.5px);
     top: calc(50% - 607px/2 - 39.5px);
     
     background: #BF5C24;
     border: 5px solid #F80303;
     box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+textarea
+{
+ border: solid 2px rgb(0, 0, 0);   
+ color: 000100;
+ background: #BF5C24;
+ overflow: hidden;
+ resize: none;
 }
