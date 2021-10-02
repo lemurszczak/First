@@ -1,3 +1,0 @@
-Umieść na swojej stronie kalkulator do obliczenia podatku dochodowego od działalności gospodarczej rozliczanej przy ryczałcie, 
-podatku liniowym, karcie podatkowej, podatku progresywnym niech użytkownik wpisuje swoje przychody oraz ma wybór z pola formularza 
-option odpowiedniej formy opodatkowania. Wyniki wyświetl w tabeli ile będzie musiał zapłacić w ramce
