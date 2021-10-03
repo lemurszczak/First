@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+</head>
+
+<body>
+
+    <script>
+        
+        function pole(a,b)
+        {
+            var a_licz = parseInt(a);            
+            var b_licz = parseInt(b);
+            
+            var p = a_licz * b_licz;
+
+            pokaz1.innerHTML = "Pole: " + p ;
+        }
+
+        function obw(a,b)
+        {
+            var a_licz = parseInt(a);            
+            var b_licz = parseInt(b);
+            
+            var ob = (2*a_licz ) + (2*b_licz);
+
+            pokaz2.innerHTML = "Obwód: " + ob ;
+        }
+
+    </script>
+    <form name ="formularz" onsubmit="pole(this.liczba1.value, this.liczba2.value); obw(this.liczba1.value, this.liczba2.value); return false">
+        Podaj a: <input type="number" name="liczba1"/>
+        Podaj b: <input type="number" name="liczba2"/>
+
+        <input type="submit" value = "oblicz"/>
+
+        <table>
+            <tr id="pokaz1"></tr>
+            <tr id="pokaz2"></tr>
+        </table>
+    </form>
+</body>
+</html>
