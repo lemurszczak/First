@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>burgundia</title>
+<link rel="stylesheet" href="style.css">
+<script>
+    function dodawanie()
+    {
+    var A=parseFloat(MU.value)
+    var B=parseFloat(AR.value)
+    var C=parseFloat(KA.value)
+    
+    wynik.innerHTML = "Cała Armia"+"<br>"+"Liczba Muszkieterów:"+A+"<br>"+"Liczba Artylerzystów:"+B+"<br>"+"Liczba Kawalerzystów:"+C+"<br>";
+
+    var los=Math.floor((Math.random()*20)+ 2);
+
+    var los2=Math.floor((Math.random()*20)+ 2);
+
+    var los3=Math.floor((Math.random()*20)+ 2);
+
+    
+    var losa=Math.pow(A,los)
+    var losb=Math.pow(B,los2)
+    var losc=Math.pow(C,los3) 
+
+
+
+    wynik2.innerHTML= "Wroga Armia"+"<br>"+"Liczba Muszkieterów:"+losa+"<br>"+"Liczba Artylerzystów:"+losb+"<br>"+"Liczba Kawalerzystów:"+losc+"<br>";
+
+
+}
+</script>
+
+
+
+
+
+
+</head>
+<body>
+
+    <div id="baner">
+<a href="https://eu4.paradoxwikis.com/Burgundy"> <img src="Burgundy.jpg" width="200px" height="200px"></a>
+</div>
+
+    <div id="lewy">
+    
+    <div id="wynik"></div> <br>  
+    <div id="wynik2"></div>
+
+</div>
+    <div id="prawy">
+
+ <input id="MU" type="number"/> Liczba Muszkieterów <br>
+ <input id="AR" type="number"/> Liczba Artylerzystów <br>
+ <input id="KA" type="number"/> Liczba Kawalerzystów <br>
+ <input value="Policz" type="button" onclick="dodawanie()"/><br>
+ 
+
+
+
+</div>
+<div style="clear:both"></div>
+    <div id="footer">
+
+</div>
+
+
+
+</body>
+
+
+
+</html>
