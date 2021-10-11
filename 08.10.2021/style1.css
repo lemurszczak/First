@@ -1,0 +1,36 @@
+Body
+{
+ background:orange;
+
+}
+#tytuł
+{
+   text-align: center;
+   font-size: 50px;
+   color:rgb(255, 0, 255);
+}
+#foto
+{
+   float: left;
+   height: 50%;
+   width: 50%; 
+
+}
+
+
+#stats
+{
+ float: left;
+ height: 50%;
+ width: 50%; 
+
+
+}
+#select
+{
+  float: right;
+  height: 50%;
+  width: 50%;
+
+
+}

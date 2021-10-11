@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>RPG CHARACTER MAKER</title>
+    <link rel="stylesheet" href="style1.css">
+
+    <script>
+    function Staty(LVL,Str,DEX,INT,HP,ES)
+    {
+      this.LVL=LVL;
+      this.Str=Str;
+      this.DEX=DEX;
+      this.INT=INT;
+      this.HP=HP;
+      this.ES=ES;
+     }
+     function Klasa()
+      {
+
+     Ranger=new Staty("1","10","50","10","500","0");
+     Witch=new Staty("1","5","5","50","250","100");
+     Maruder=new Staty("1","50","5","5","1000","0");
+     Duelist=new Staty("1","25","25","5","500","0");
+     Shadow=new Staty("1","5","25","25","350","50");
+     Templar=new Staty("1","25","5","25","750","25");
+     
+     
+     var nick = nazwa.value; 
+     var Postac = wybor.value;
+     
+     
+     switch(Postac)
+     {
+        case'Ranger':
+        wynik.innerHTML = "Nickname: "+nick+"<br>"+"Ranger<br>"+"LVL: "+Ranger.LVL+"<br>"+"Str: "+Ranger.Str+"<br>"+"DEX: "+Ranger.DEX+"<br>"+"INT: "+Ranger.INT+"<br>"+"HP: "+Ranger.HP+"<br>"+"ES: "+Ranger.ES+"<br>";  
+        var foto1 ="<img src = \"ranger.JFIF\"/>";
+        foto.innerHTML = foto1;
+        break;
+        case'Witch':
+        wynik.innerHTML = "Nickname: "+nick+"<br>"+"Wtich <br>"+"LVL: "+Wtich.LVL+"<br>"+"Str: "+Wtich.Str+"<br>"+"DEX: "+Wtich.DEX+"<br>"+"INT: "+Wtich.INT+"<br>"+"HP: "+Wtich.HP+"<br>"+"ES: "+Wtich.ES+"<br>";
+        var foto2 ="<img src = \"witch.jpg\"/>";
+        foto.innerHTML = foto2;
+        break;
+        case'Maruder':
+        wynik.innerHTML = "Nickname: "+nick+"<br>"+"Maruder <br>"+"LVL: "+Maruder.LVL+"<br>"+"Str: "+Maruder.Str+"<br>"+"DEX: "+Maruder.DEX+"<br>"+"INT: "+Maruder.INT+"<br>"+"HP: "+Maruder.HP+"<br>"+"ES: "+Maruder.ES+"<br>";
+        var foto3 ="<img src = \"maruder.JFIF\"/>";
+        foto.innerHTML = foto3;
+        break;
+        case'Duelist':
+        wynik.innerHTML = "Nickname: "+nick+"<br>"+"Duelist <br>"+"LVL: "+Duelist.LVL+"<br>"+"Str: "+Duelist.Str+"<br>"+"DEX: "+Duelist.DEX+"<br>"+"INT: "+Duelist.INT+"<br>"+"HP: "+Duelist.HP+"<br>"+"ES: "+Duelist.ES+"<br>";
+        var foto4 ="<img src = \"duelist.JFIF\"/>";
+        foto.innerHTML = foto4;
+        break;
+        case'Shadow':
+        wynik.innerHTML = "Nickname: "+nick+"<br>"+"Shadow <br>"+"LVL: "+Shadow.LVL+"<br>"+"Str: "+Shadow.Str+"<br>"+"DEX: "+Shadow.DEX+"<br>"+"INT: "+Shadow.INT+"<br>"+"HP: "+Shadow.HP+"<br>"+"ES: "+Shadow.ES+"<br>";
+        var foto5 ="<img src = \"shadow.JFIF\"/>";
+        foto.innerHTML = foto5;
+        break;
+        case'Templar':
+        wynik.innerHTML = "Nickname: "+nick+"<br>"+"Templar<br>"+"LVL: "+Templar.LVL+"<br>"+"Str: "+Templar.Str+"<br>"+"DEX: "+Templar.DEX+"<br>"+"INT: "+Templar.INT+"<br>"+"HP: "+Templar.HP+"<br>"+"ES: "+Templar.ES+"<br>";
+        var foto6 ="<img src = \"templar.JFIF\"/>";
+        foto.innerHTML = foto6;
+        break;
+
+     }
+    }
+     </script>
+
+
+</head>
+<body>
+<div id=tytuł>
+   GOOD GAME 
+</div>   
+<div id=foto>
+
+</div>
+<div style="clear:both"></div>
+
+
+
+<div id=stats>
+<p>Statystyki postaci:</p>
+      <div id="wynik"></div>
+      
+</div>
+
+<div id=select>
+    <p>Nickname: : </p>
+    <input type="text" size="10" id="nazwa"/>
+    <br>
+    Wybierz Klase :D<br>
+    <select id=wybor>
+        <option value="Ranger">Ranger</option>
+        <option value="Witch">Witch</option>
+        <option value="Maruder">Maruder</option>
+        <option value="Duelist">Duelist</option>
+        <option value="Shadow">Shadow</option>
+        <option value="Templar">Templar</option> 
+    </select>
+    <input type="button" value="Wybierz" onclick="Klasa()"><br>
+    
+    
+    
+    </div>
+
+</body>
+</html>
