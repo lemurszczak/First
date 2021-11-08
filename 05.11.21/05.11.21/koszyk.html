@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERKIUS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+function licz()
+{ 
+var mle = document.getElementById("mleko");
+var kaw = document.getElementById("kawa");
+var szl = document.getElementById("szlugi");
+var mon = document.getElementById("MONSTEREK");
+var zni = document.getElementById("zniżka");
+
+var lista = "Lisata zakopow: ";
+var cena = 0;
+
+
+if(mle.checked)
+{
+    lista += "Mleko, ";
+    cena += 4;
+}
+if(kaw.checked)
+{
+    lista += "kawa, ";
+    cena += 8;
+}
+if(szl.checked)
+{
+    lista += "szlugi, ";
+    cena += 15;
+}
+if(mon.checked)
+{
+    lista += "MONSTEREK";
+    cena += 6;
+}
+if(zni.checked)
+{
+
+    cena *= 0.6;
+}
+
+wynik.innerHTML = lista
+wynik2.innerHTML = "Cena prodokiow " + parseFloat(cena).toFixed(2) + "zł"
+
+}
+
+
+</script>
+
+
+<body>
+   <div id=naglowek>
+     <h1>ZAKUPY W MERKIUSIE</h1>
+     <br>
+
+   </div>
+
+    <div id=lewy>
+  
+    </div>
+
+   <div id=srodek>
+    Mleko 4 zł<input id="mleko" type="checkbox" name="checkbox1" value="mleko"><br>
+    kawa 8zł<input id="kawa" type="checkbox" name="checkbox2" value="kawa" ><br>
+    szlugi 15 zł<input id="szlugi" type="checkbox" name="checkbox3" value="szlugi"><br>
+    MONSTEREK 6 zł<input id="MONSTEREK" type="checkbox" name="checkbox4" value="MONSTEREK"><br>
+    Zniżka 40% <input id="zniżka" type ="checkbox" name="elo" value="zniżka"><br>
+    <input value="Policz" type="button" onclick="licz()">
+   </div>
+
+   <div id=prawy>
+    <br><br> 
+
+    <p id="wynik"></p>
+    <p id="wynik2"></p>
+
+   </div>
+   <div id=footer>
+      <h5>TEL.666.555.444</h5>  
+   </div>
+    
+</body>
+</html>
